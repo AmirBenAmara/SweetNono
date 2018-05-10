@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* -------------------------------------------
+
+	Name: 		The Cakery Shop (print)
+	Date:		2014/10/13
+	Author:		http://psdhtml.me
+		   		   
+---------------------------------------------  */
+* { margin: 0; padding: 0; }
+@page { margin: .5cm; }
+
+html { font-size: 100.01%; }
+body { background: #fff; font-size: 60%; }
+
+body, textarea, input, select, option, button { color: #000; font-family: Calibri, Helvetica, Arial, sans-serif; line-height: 1.4; }
+li, dt, dd, p, figure, th, td, caption, pre, legend { font-size: 1.5em; } /*---*/ li *, li li, dt *, dd *, p *, figure *, th *, td *, legend * { font-size: 1em; }
+ul, ol, dl, p, figure, table, pre, h1, h2, h3, h4, h5, h6, legend { margin-bottom: 1em; }
+
+article, aside, div, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; margin-bottom: 2em; }
+	
+	
+/*! Layout --------- */
+#top { margin: 0 0 1em; padding: 0 0 0.5em; border-bottom: 1px solid #ccc; }
+	#top h1 a { color: #000; text-decoration: none; }
+#content { }
+	#content a:after { content: " (" attr(href) ") "; color: #555; font-size: 0.8em; font-style: italic; }
+	#content a[href^="#"]:after { content: ""; }
+#footer { margin: 1em 0 0; padding: 1em 0 0; border-top: 1px solid #ccc; }
+
+
+/*! Columns --------- */
+
+
+/*! Modules --------- */
+.gallery-a, .gallery-b, .gallery-c, .gallery-d, .gallery-e, .gallery-f { list-style: none; height: auto !important; padding: 0; }
+	.gallery-a * { position: relative !important; left: 0 !important; top: 0 !important; transform: none !important; -moz-transform: none !important; -webkit-transform: none !important; -o-transform: none !important; -ms-transform: none !important; }
+	.gallery-a li, .gallery-b li, .gallery-c li, .gallery-d li, .gallery-e li, .gallery-f li { margin-bottom: 2em; }
+	.gallery-a li > span, .gallery-a li a > span, .gallery-b li > span, .gallery-b li > a > span, .gallery-f li > span > .inner { margin: 0 !important; }
+	.gallery-f li > span { height: auto; }
+	.gallery-a img, .gallery-b img, .gallery-c img, .gallery-e img, .gallery-f img { display: block; margin: 0 0 .5em; }
+.list-b, .comments-a, .list-i { list-style: none; padding: 0; }
+	.list-b li, .comments-a li, .list-i li { margin-bottom: 1em; }
+	.list-b li img, .comments-a li img { display: block; margin-bottom: .5em; }
+	.comments-a .title, .list-i .title, .gallery-a .titl, .gallery-b .title, .gallery-c .title { display: block; font-weight: 700; }
+	.comments-a .date { display: block; }
+	.comments-a ul { list-style: none; margin: 0; }
+.list-g { }
+	.list-g span { font-weight: 700; }
+		
+
+/*! Defaults --------- */
+h1, h2, h3, h4, h5, h6 { margin: 1.25em 0 0.5em; color: #000; font-family: Cambria, Georgia, serif; }
+h2, h3 { page-break-after: avoid; }
+	h1 { margin-top: 0; font-size: 2.4em; }
+	h2 { font-size: 2.0em; }
+	h3 { font-size: 1.8em; }
+	h4 { font-size: 1.6em; }
+	h5 { font-size: 1.5em; text-transform: uppercase; }
+	h6 { font-size: 1.4em; text-transform: uppercase; }
+p, h2, h3 { orphans: 3; widows: 3; }
+
+a { color: #09f; text-decoration: underline; }
+
+img { max-width: 100% !important; border-width: 0; image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; }
+tr, img { page-break-inside: avoid; }
+
+ul, ol, dd, blockquote { padding-left: 2em; }
+	ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+
+table { display: table; border-collapse: collapse; border-spacing: 0; }
+	table th, table td { padding: 0.3em 0.6em; border: 1px solid #ccc; }
+
+
+/*! Hiding --------- */
+#skip, nav, form, .list-a, .slider-a, .list-c, #social, .social-a, #featured, .pagination-a, .social-b, .link-a, #welcome, .list-h, .list-i img, #map, .chart, .scheme-f a, .bx-controls, .image-a img, .image-a .img, .image-a canvas { position: absolute; left: -3000em; top: -3000em; }
